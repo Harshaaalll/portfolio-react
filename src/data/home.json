@@ -1,0 +1,350 @@
+{
+ "cards": [
+  {
+   "href": "portfolio.html#regrag",
+   "id": "regrag",
+   "icon": "📜",
+   "title": "RegRAG — RBI Banking-Regulation RAG Benchmark",
+   "desc": "Question answering over RBI Master Directions with page citations, and a benchmark of six RAG designs on the same questions. An evidence gate abstains with \"not found\" when the documents do not support an answer. Early development.",
+   "tags": [
+    "RAG",
+    "LLM Evals",
+    "Guardrails",
+    "Ollama"
+   ],
+   "result": "Hybrid retrieval recall@5 0.92 on 26 questions · 6 pipelines compared · full benchmark in progress"
+  },
+  {
+   "href": "portfolio.html#voice-agent-audit",
+   "id": "voice-agent-audit",
+   "icon": "🎙️",
+   "title": "Voice Agent Audit — Evaluating a Hinglish Voice Agent",
+   "desc": "Evaluation kit for a Hinglish payment-reminder voice agent: rule checks, an LLM judge checked against human labels, and hybrid retrieval over a pgvector policy corpus, served with FastAPI, Redis and Langfuse tracing.",
+   "tags": [
+    "LLM Evals",
+    "pgvector",
+    "FastAPI",
+    "Langfuse"
+   ],
+   "result": "43.5% fewer prompt tokens · 119/120 correct actions · retrieval recall@3 0.53"
+  },
+  {
+   "href": "portfolio.html#sanwaad",
+   "id": "sanwaad",
+   "icon": "🛠️",
+   "title": "Sanwaad — Multi-Agent Complaint Resolution",
+   "desc": "Multi-agent system that turns public complaints into resolved cases. LangGraph pipeline with hybrid RAG, policy-grounded replies, and human approval on every money action. 472 tests and trace-level evals.",
+   "tags": [
+    "LangGraph",
+    "Gemini",
+    "Hybrid RAG",
+    "FastAPI"
+   ],
+   "result": "15/15 trajectory scenarios passed · 0 safety violations · retrieval recall@5 1.00"
+  },
+  {
+   "href": "portfolio.html#stanchart",
+   "id": "stanchart",
+   "icon": "🏦",
+   "title": "LMA Clause Identification Tool",
+   "desc": "Production NLP pipeline on Dataiku DSS identifying legal clauses in loan agreements. Fine-tuned DistilBERT + SBERT semantic search with confidence thresholding.",
+   "tags": [
+    "DistilBERT",
+    "SBERT",
+    "Dataiku DSS",
+    "NLP"
+   ],
+   "result": "↑ 90% reduction in audit time · 98.6% recall"
+  },
+  {
+   "href": "portfolio.html#autotrans",
+   "id": "autotrans",
+   "icon": "🌐",
+   "title": "AutoTransFlow",
+   "desc": "Multilingual document translation preserving original PDF layout. doc-layout-yolo detects text blocks with bounding boxes; NLLB-200 translates 200 languages locally.",
+   "tags": [
+    "NLLB-200",
+    "YOLO",
+    "Computer Vision",
+    "PDF AI"
+   ],
+   "result": "Layout-preserving translation · 200 languages · Zero external API calls"
+  },
+  {
+   "href": "portfolio.html#dgliger",
+   "id": "dgliger",
+   "icon": "🤖",
+   "title": "RAG Chatbot",
+   "desc": "Production retrieval-augmented generation chatbot. LangChain pipeline with FAISS vector database, all-MiniLM-L6-v2 embeddings, and StableLM Zephyr 3B for grounded answers.",
+   "tags": [
+    "LangChain",
+    "FAISS",
+    "StableLM",
+    "RAG"
+   ],
+   "result": "Multi-turn dialogue · Grounded answers · PDF knowledge base"
+  },
+  {
+   "href": "portfolio.html#ocr",
+   "id": "ocr",
+   "icon": "🏥",
+   "title": "Medical Bill OCR & Fraud Detection",
+   "desc": "End-to-end datathon pipeline: OpenCV preprocessing → PaddleOCR → Qwen 7B extraction → 4 automated fraud checks (IQR, reconciliation, SHA-256 hashing, pattern analysis).",
+   "tags": [
+    "PaddleOCR",
+    "Qwen 7B",
+    "Fraud Detection",
+    "OpenCV"
+   ],
+   "result": "90%+ extraction accuracy · 4 fraud detection checks"
+  },
+  {
+   "href": "portfolio.html#asr",
+   "id": "asr",
+   "icon": "🎙️",
+   "title": "Multilingual ASR System",
+   "desc": "Zero-shot Urdu speech recognition using Whisper. Audio preprocessing pipeline with pydub and librosa, IndicBERT MLM corrector for post-ASR error fixing.",
+   "tags": [
+    "Whisper",
+    "IndicBERT",
+    "pydub",
+    "Speech AI"
+   ],
+   "result": "↓ 14% Word Error Rate · Zero-shot Urdu recognition"
+  },
+  {
+   "href": "portfolio.html#market",
+   "id": "market",
+   "icon": "📈",
+   "title": "Market Analysis Using LLMs",
+   "desc": "Financial news sentiment pipeline. BeautifulSoup scraping → two-pass BART summarisation → RoBERTa sentiment → SMOTE balancing → Flask API with Streamlit dashboard.",
+   "tags": [
+    "BART",
+    "RoBERTa",
+    "Flask",
+    "SMOTE"
+   ],
+   "result": "500+ articles processed · Real-time sentiment API"
+  },
+  {
+   "href": "portfolio.html#opsagent",
+   "id": "opsagent",
+   "icon": "🧭",
+   "title": "OpsAgent — Autonomous Browser Operator",
+   "desc": "AI agent that completes back-office tasks in a real browser using a plan-act-verify loop. Approval gates enforced in code, and an independent verifier that re-reads the ERP without an LLM.",
+   "tags": [
+    "Gemini",
+    "Playwright",
+    "FastAPI",
+    "AI Agent"
+   ],
+   "result": "11/12 eval scenarios passed · about $0.03 per run · approval gates in code"
+  },
+  {
+   "href": "portfolio.html#audit-insight",
+   "id": "audit-insight",
+   "icon": "📊",
+   "title": "Audit Insight — NLP Analytics",
+   "desc": "End-to-end NLP pipeline for audit text analysis. RoBERTa sentiment classification, Gensim LDA topic modeling, KMeans clustering with t-SNE visualization, and Streamlit dashboard.",
+   "tags": [
+    "RoBERTa",
+    "spaCy",
+    "LDA",
+    "Streamlit"
+   ],
+   "result": "Sentiment + topic + clustering · Interactive dashboard"
+  },
+  {
+   "href": "portfolio.html#career-copilot",
+   "id": "career-copilot",
+   "icon": "⚡",
+   "title": "Career Copilot 2.0",
+   "desc": "AI-powered job search operating system. RAG matching with FAISS, response prediction, hidden market radar, ATS optimization, and 11 intelligent modules. Built with Streamlit + LangChain + Groq LLaMA 3.",
+   "tags": [
+    "LangChain",
+    "FAISS",
+    "Groq",
+    "LLaMA 3"
+   ],
+   "result": "11 AI modules · Complete career operating system"
+  },
+  {
+   "href": "portfolio.html#airfare-ml",
+   "id": "airfare-ml",
+   "icon": "✈️",
+   "title": "AirFare-ML",
+   "desc": "End-to-end airline ticket price prediction. 6 regression algorithms benchmarked with Bayesian hyperparameter optimization. LightGBM achieves 93.9% R² with ₹689 MAE.",
+   "tags": [
+    "LightGBM",
+    "XGBoost",
+    "scikit-learn",
+    "SHAP"
+   ],
+   "result": "93.9% R² · ₹689 MAE · 6 models benchmarked"
+  },
+  {
+   "href": "portfolio.html#hasthkala-setu",
+   "id": "hasthkala-setu",
+   "icon": "🎨",
+   "title": "Hastkala Setu",
+   "desc": "Dual-component BITS design project: ML pipeline for cross-cultural conflict resolution (MANOVA, XGBoost, SHAP) + Flutter mobile app for Indian handicraft artisans with Hindi voice input.",
+   "tags": [
+    "XGBoost",
+    "SHAP",
+    "Flutter",
+    "Firebase"
+   ],
+   "result": "0.938 AUC · 776 subjects · Field-tested app"
+  },
+  {
+   "href": "portfolio.html#road-safety",
+   "id": "road-safety",
+   "icon": "🚦",
+   "title": "Road Safety NLP Analysis",
+   "desc": "NLP-based classification of road accident severity from news articles. Multi-source scraping pipeline with spaCy NER for location extraction and severity classification across 8 Hyderabad news outlets.",
+   "tags": [
+    "spaCy",
+    "BeautifulSoup",
+    "NLP",
+    "NER"
+   ],
+   "result": "8 news sources · Severity classification · NER location extraction"
+  },
+  {
+   "href": "portfolio.html#hydera-analytics",
+   "id": "hydera-analytics",
+   "icon": "🏗️",
+   "title": "HydRERA Analytics",
+   "desc": "End-to-end real estate analytics platform. ELT pipeline (Python → PostgreSQL → dbt) producing builder reliability scorecards, supply-demand tracking, price fairness analysis, and delay prediction with SHAP.",
+   "tags": [
+    "dbt",
+    "PostgreSQL",
+    "Power BI",
+    "XGBoost"
+   ],
+   "result": "4 analytical modules · Builder scorecards · Delay prediction"
+  },
+  {
+   "href": "portfolio.html#kg-rag",
+   "id": "kg-rag",
+   "icon": "🔗",
+   "title": "Knowledge Graph RAG for Legal AI",
+   "desc": "Hybrid KG+RAG system for Indian Supreme Court case analysis. Neo4j legal knowledge graph with 1,000 cases, Vespa hybrid search (BM25 + InLegalBERT), and IRAC-constrained LLM reasoning with Mistral 7B.",
+   "tags": [
+    "Neo4j",
+    "InLegalBERT",
+    "Vespa",
+    "Mistral"
+   ],
+   "result": "1,000 cases · IRAC reasoning · KG vs GraphMERT benchmark"
+  },
+  {
+   "href": "portfolio.html#stemcells-dbms",
+   "id": "stemcells-dbms",
+   "icon": "🧬",
+   "title": "StemCells DBMS",
+   "desc": "Full-stack donor, patient, hospital, and staff management system. Flask + MySQL backend with dynamic dashboard that tracks entity counts in real-time as new registrations occur.",
+   "tags": [
+    "Flask",
+    "MySQL",
+    "HTML",
+    "DBMS"
+   ],
+   "result": "Dynamic dashboard · CRUD operations · Real-time counts"
+  }
+ ],
+ "experience": [
+  {
+   "date": "Aug 2026<br>Present",
+   "dot": "",
+   "role": "AI Engineer",
+   "org": "OTO Capital · Bangalore",
+   "bullets": [
+    "Built a production Gemini Live voice agent on Pipecat and FastAPI, serving 5 client deployments across 10 languages",
+    "Moved negotiation rules out of the prompt into a deterministic Python gate that approves or refuses the model's tool calls before it speaks",
+    "Test every model change against about 1,300 checks across five suites, plus a 500-call borrower simulator and a 17-persona text simulator",
+    "Measure agent variants with A/B control arms, isolating behaviour shifts before a production release",
+    "Cut per-turn prompt cost 79% to 3,490 tokens by moving situational context into tool responses",
+    "Mined 36,091 call records down to 12 curated training scenes; audited 26 human collector calls against RBI norms and locked 9 prohibited practices into the agent"
+   ]
+  },
+  {
+   "date": "Jul 2026<br>Aug 2026",
+   "dot": "background:var(--accent3);",
+   "role": "Data &amp; Analytics Consultant",
+   "org": "Goel Exports",
+   "bullets": [
+    "Mapped an exporter's manual order-to-cash process into a documented 4-phase Odoo 19 workflow",
+    "Configured field-level data rules across 6 process stages, agreeing each with the operations owners"
+   ]
+  },
+  {
+   "date": "Jul 2025<br>Dec 2025",
+   "dot": "",
+   "role": "Data Science Intern",
+   "org": "Standard Chartered Global Business Services · Bangalore",
+   "bullets": [
+    "Engineered NLP pipelines on Dataiku DSS to process 100+ page LMA agreements, cutting manual audit times by 90% for compliance teams",
+    "Fine-tuned DistilBERT with WeightedTrainer (20x class weight boost) achieving 98.6% recall on rare legal clauses despite 90%+ irrelevant text",
+    "Fine-tuned SBERT with MultipleNegativesRankingLoss for semantic search — retrieved gold-standard compliance language via cosine similarity",
+    "Deployed confidence thresholding (minimum correct confidence method) filtering 95%+ false positives for audit-grade precision",
+    "Built AutoTransFlow: multilingual PDF translation using doc-layout-yolo + NLLB-200, preserving original document layout without external APIs"
+   ]
+  },
+  {
+   "date": "Jun 2024<br>Jul 2024",
+   "dot": "background:var(--accent2);",
+   "role": "Machine Learning Engineer Intern",
+   "org": "DG Liger Consulting · Gurgaon",
+   "bullets": [
+    "Built production RAG chatbot: LangChain loaders → RecursiveCharacterTextSplitter → all-MiniLM-L6-v2 embeddings → FAISS → StableLM Zephyr 3B",
+    "Implemented ConversationalRetrievalChain with ConversationBufferMemory for multi-turn dialogue with proprietary PDF documents",
+    "Integrated speech and NLP models for analytics automation; scraped and processed 500+ articles via BeautifulSoup"
+   ]
+  }
+ ],
+ "skills": [
+  "Python",
+  "Gemini Live",
+  "LangGraph",
+  "Playwright",
+  "Pipecat",
+  "Odoo",
+  "LangChain",
+  "FastAPI",
+  "DistilBERT",
+  "SBERT",
+  "FAISS",
+  "NLLB-200",
+  "Whisper",
+  "Qwen 7B",
+  "SQL",
+  "Power BI",
+  "Docker (coursework)",
+  "AWS (coursework)",
+  "Pandas",
+  "Scikit-Learn",
+  "PaddleOCR",
+  "Dataiku DSS",
+  "Streamlit",
+  "XGBoost",
+  "LightGBM",
+  "SHAP",
+  "Neo4j",
+  "spaCy",
+  "RoBERTa",
+  "Groq",
+  "LLaMA 3",
+  "Mistral",
+  "Gensim",
+  "dbt",
+  "PostgreSQL",
+  "Flutter",
+  "Firebase",
+  "Selenium",
+  "BeautifulSoup",
+  "Flask",
+  "InLegalBERT",
+  "Vespa"
+ ]
+}
